@@ -60,7 +60,8 @@ font-weight: 900;
         opacity: 0;
         transform: translateX(-100%); }
     100% {
-        opacity: 1; 
+        opacity: 1;
+        transform: translateX(0); 
     }
 }
 
@@ -118,7 +119,7 @@ font-weight: 900;
     border-style:groove;
     border-color: black;
     margin-top: 80px;
-    margin-left: 30px;
+    margin-left: 80px;
     margin-bottom: 30px;
 }
 .cartaf i{
@@ -140,51 +141,84 @@ font-weight: 900;
     background-size:cover;
     background-attachment: fixed; /* Esto hace que la imagen de fondo sea fija */
     background-position:center;
-    padding-bottom: 400px;
+    padding-bottom: 500px;
 }
 
-#contact h2{
-    color: rgb(33, 102, 166);    
-    border-color: aliceblue;
-    font-size: 70px
+.comunicate{
+    padding-top: 60px;
+}
+
+.medios{
+    color: #07300e;
+    }
+
+.telefonos a{
+    color: #18872b;
+    font-size: 20px;
 }
 
 /*formulario*/
 
 
 form {
-    text-align: left;
-    background: rgb(5,4,194);
-  background: linear-gradient(90deg, rgba(5,4,194,1) 0%, rgba(7,198,207,1) 52%, rgba(5,4,194,1) 100%);
+    text-align: center;
+    background: rgb(246, 246, 248);
+  background: linear-gradient(90deg, rgb(241, 241, 242) 0%, rgb(229, 246, 240) 52%, rgb(230, 230, 234) 100%);
     margin:10px 170px;
-    border: 4px solid #0a001f;
+    border: 4px solid #fefeff;
+    border-radius: 60%;
     padding: 10px;
-    width: 500px;
+    width: 1 rem;
     border-radius: 5px;
     box-shadow: 3px 6px 110px #078eac;
   }
   
   /*campos del formulario */
-  input[type=text], input[type=email], textarea {
-    width: 80%;
-    padding: 5px;
-    margin: 8px 0;
+  input[type=number], input[type=date] {
+    width:13%;
+    padding: 1px;
+    margin: 1px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    
     
   }
   
   /*botón del formulario */
   button[type=submit] {
-   background: rgb(8,223,211);
-  background: linear-gradient(0deg, rgba(8,223,211,1) 0%, rgba(0,241,29,1) 100%);
+
+    background: #F7F8F8;  
+    background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  
+    background: linear-gradient(to right, #ACBB78, #F7F8F8); 
     color: black;
-    padding: 20px 20px;
+    padding:0px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     }
+
+
+
+
+    #formconsulta{        
+            margin-left:300px ;
+            margin-bottom: 60px;
+            border: 4px solid #fefeff;
+            border-radius: 60%;
+            padding: 10px;
+            width: 50%;
+            border-radius: 5px;
+            box-shadow: 3px 6px 110px #078eac;
+          
+    }
+
+
+
+
+
+
+
 
 
     /*  NOSOTROS */
@@ -247,3 +281,122 @@ form {
         color:#eee;
         line-height: 1.8;
     }
+
+
+
+
+
+
+
+    .gallery .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap:1.2rem;
+    }
+    
+    .gallery .box-container .box{
+        position: relative; 
+        border:0.5rem solid #333;
+        border-radius: .5rem;
+        height: 20rem;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 30px;
+    }
+    
+    .gallery .box-container .box img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .gallery .box-container .box:hover img{
+        transform: scale(1.1);
+        filter: grayscale();
+    }
+    
+    .gallery .box-container .box .title{
+        position: absolute;
+        top:-10rem; left:0; right: 0;
+        background:#333;
+        color:#fff;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
+    .gallery .box-container .box:hover .title{
+        top:0;
+    }
+    
+    .gallery .box-container .box .icons{
+        position: absolute;
+        bottom:-10rem; left:0; right: 0;
+        background:#333;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    
+    .gallery .box-container .box:hover .icons{
+        bottom: 0;
+    }
+    
+    .gallery .box-container .box .icons a{
+        font-size: 2rem;
+        margin:.5rem 1rem;
+        color:#fff;
+    }
+    
+    .gallery .box-container .box .icons a:hover{
+        color:rgb(18, 106, 28);
+    }
+    
+
+    
+    .price .box-container{
+        margin: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap:1.5rem;
+    }
+    
+    .price .box-container .box{
+        padding:2rem 0;
+        background:#333;
+        border-radius: .5rem;
+        text-align: center;
+    }
+    
+    .price .box-container .box:hover{
+        transform: scale(1.03);
+    }
+    
+    .price .box-container .box .title{
+        background:rgb(11, 98, 19);
+        color:#fff;
+        padding:1.5rem 0;
+        font-size: 2rem;
+    }
+    
+    .price .box-container .box .amount{
+        color:#fff;
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    
+    .price .box-container .box ul{
+        list-style-type: none;
+        padding:1rem 0;
+    }
+    
+    .price .box-container .box ul li{
+        font-size: 1.rem;
+        color:rgb(220, 227, 221);
+        padding:1rem 0;
+    }
+    
+    .price .box-container .box ul li i{
+        color:rgb(12, 93, 24);
+        padding-right: .5rem;
+    }
+    

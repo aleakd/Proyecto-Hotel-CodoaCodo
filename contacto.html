@@ -40,9 +40,7 @@
              <il class="nav-item">
              <a class="nav-link" href="eventos.html">Eventos</a>
              </il>
-             <il class="nav-item">
-             <a class="nav-link" href="#Servivios">Servicio</a>
-             </il>
+             
              <il class="nav-item">
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </il>
@@ -68,62 +66,81 @@
 
 
 
-    <h1>Contactanos:</h1>
+    <h1 class="comunicate">Comunicate con nosotros:</h1>
     <br>
+
+
+
+
+    <div class="row telefonos">
+      <div class="col-12 col-md-6">
+        
+    <h2 class="medios">Teléfonos:</h2>
+    <i class="fa-solid fa-mobile-screen-button fa-2x" style="color: #153937;"><a href="tel:+5491132771050">+5491132771050</a></i><br>
+    <i class="fa-solid fa-phone fa-2x" style="color: #153937;"><a href="tel:+5491132771050">+3547-85895</a></i>
     
-    <h6>Teléfono:</h6>
-    <i class="fa-solid fa-mobile-screen-button fa-2x" style="color: #101495;"><a href="tel:+5491132771050">+5491132771050</a></i>
-    
-    <h6>Correo electrónico:</h6>
-    <i class="fa-solid fa-envelope fa-2x" style="color: #101495;"><a href="mailto:recepcaracolresort@gmail.com">recepcaracolresort@gmail.com</a>
+    <h2>Correo electrónico:</h2>
+    <i class="fa-solid fa-envelope fa-2x" style="color: #153937;"><a href="mailto:recepcaracolresort@gmail.com">recepcaracolresort@gmail.com</a>
     </i>
 
-    <h2>Aquí estamos:</h2>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <h2 class="medios">Aquí estamos:</h2>
 
     
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.785007076669!2d-58.678771825265!3d-34.58430615647157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbe9c4caa45e3%3A0x1260e962f741aa10!2sJuana%20Manuela%20Gorriti%203837%2C%20William%20C.%20Morris%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714944583394!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-<br>
-<br>
-    <h2>Reservas y/o Consultas:</h2>
-
-    <h6>Comunicate con nosotros</h6>
-
-    <form action="Link" method="get">
-        <fieldset>
-            <legend>Datos o consultas</legend>
-            
-            <label for="Nombre">Nombre</label>
-            <input id="Nombre" type="text" name="name" placeholder="Ingresa tu nombre" required><br>
-            
-            <label for="Apellido">Apellido</label>            
-            <input id="Apellido" type="text" name="lastname" placeholder="Ingresa tu apellido" required><br>
-            
-            <label for="Edad">Edad</label>
-            <input type="number" min="0" max="110" name="age"><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.785007076669!2d-58.678771825265!3d-34.58430615647157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbe9c4caa45e3%3A0x1260e962f741aa10!2sJuana%20Manuela%20Gorriti%203837%2C%20William%20C.%20Morris%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714944583394!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
-            <label for="Fecha">Fecha de Nacimiento</label>
-            <input type="date" id="Fecha" name="birth"><br>
     
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required><br>
-    
-            <label for="Pass">Contraseña</label>
-            <input type="password" name="password" id="Pass" required><br>
-        </fieldset>
-    
-        <fieldset>
-            <legend>Dejanos tus comentarios</legend>
 
-
-            <textarea name="Comentarios" id="" cols="50" rows="10"></textarea>
-        </fieldset>
         
-        <input type="reset" value="Borrar">
-        <input type="submit" value="Enviar">
+      </div>
+    </div>
     
-    </form>
+
+   
+<br>
+<br>
+    <h2>Dejanos tu Consultas:</h2>
+
+    <div class="row">
+      <div class="col-12">        
+        <form id="formconsulta" action="">
+          
+              <legend>Formulario de consultas</legend>
+              
+              <label for="Nombre">Nombre</label>
+              <input id="Nombre" type="text" name="name" placeholder="Ingresa tu nombre" required><br>
+              <label for="Nombre">Apellido</label>
+              <input id="Nombre" type="text" name="name" placeholder="Ingresa tu apellido" required><br>
+  
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Ingresa tu email" required><br>             
+                   
+      
+        
+          
+      
+          
+              <legend>Dejanos tus comentarios</legend>
+  
+  
+              <textarea name="Comentarios" id="" cols="30" rows="10"></textarea>
+         
+          
+          
+          <button><input type="reset" value="Borrar"></button>
+          <button><input type="submit" value="Enviar"></button>
+      
+      </form>
+
+
+      </div>
+    </div>
+
+  
+
+   
 
     
  

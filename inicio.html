@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><CaracolSPA></title>
+    <title>CaracolSPA</title>
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,11 +59,45 @@
         <div class="titulo">
         <h1 class="nombre animated-heading">Caracol Resort</h1>
         <h4 class="subnombre">Hotel & Spa</h4>
-        <button type="button" class="btn btn-light">Reservas</button>
+
+
+
+        <form class="form_reserva">
+          <label for="fecha_desde">Desde</label>
+          <input type="date" name="fecha_desde" id="desde" required>
+
+          <label for="fecha_hasta">Hasta</label>
+          <input type="date" name="fecha_hasta" id="hasta" required>
+
+          <label for="huespedes_adultos">Adultos</label>
+          <input type="number" name="huespedes_adultos" id="cliente">
+
+
+          <label for="huespedes_adultos">Menores (3años)</label>
+          <input type="number" name="huespedes_menor" id="cliente2">
+
+
+          
+          <button type="submit" class="btn btn-light">Reservas</button>
+        </form>
+
+
+
+
+
+
+
+        
         </div>
 
     </div> 
     </section>
+
+
+
+
+
+    
 
     <section class="segunda">
         <div class="row segunda_parte">
