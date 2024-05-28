@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><CaracolSPA></title>
+      <link rel="js" href="./">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +19,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     
 <link rel="stylesheet" href="./style.css">
+
+
 </head>
 
 <body>
@@ -34,16 +37,16 @@
          
          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
            <ul class="navbar-nav ms-auto">
-             <il class="nav-item">
+             <li class="nav-item">
              <a class="nav-link" href="contacto.html">Contacto</a>
-             </il>
-             <il class="nav-item">
+             </li>
+             <li class="nav-item">
              <a class="nav-link" href="eventos.html">Eventos</a>
-             </il>
+             </li>
              
-             <il class="nav-item">
+             <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </il>
+                </li>
            </ul>
              </nav>
          </div>
@@ -104,8 +107,9 @@
     <h2>Dejanos tu Consultas:</h2>
 
     <div class="row">
-      <div class="col-12">        
-        <form id="formconsulta" action="">
+      <div class="col-12"> 
+              
+        <form id="formconsulta" action="" onsubmit="return validacion();">
           
               <legend>Formulario de consultas</legend>
               
@@ -115,7 +119,19 @@
               <input id="Nombre" type="text" name="name" placeholder="Ingresa tu apellido" required><br>
   
               <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="Ingresa tu email" required><br>             
+              <input type="email" id="email" name="email" placeholder="Ingresa tu email" required><br> 
+              
+
+
+              <select id="opciones" name="opciones">
+                <option value="0">- Selecciona un pais -</option>
+                <option value="1">Argentina</option>
+                <option value="2">Brasil</option>
+                <option value="3">Uruguay</option>
+            </select><br>
+
+            <label id="mensaje"></label><br>
+
                    
       
         
@@ -129,8 +145,8 @@
          
           
           
-          <button><input type="reset" value="Borrar"></button>
-          <button><input type="submit" value="Enviar"></button>
+          <input type="reset" value="Borrar">
+          <input type="submit" value="Enviar">
       
       </form>
 
@@ -166,7 +182,7 @@
     <h1 class="titulo_footer">Caracol Hotel & Spa</h1>
     <div class="row">
 
-      <div class="col-3 cartaf">
+      <div class="col-md-3 cartaf">
         <h2>Resrevas con nosotros</h2>
        
         <i class="fa-solid fa-location-dot fa-2x" style="color: #f5f5f5;"></i><p>Av. Siempreviva 2348</p>
@@ -174,8 +190,8 @@
         <i class="fa-solid fa-envelope fa-2x" style="color: #f0f2f4;"></i><p>Hotelcaracolspa@contacto.com</p>
       </div>
 
-      <div class="col-3 cartaf">
-        <h2>Horarios de atención</h2>
+      <div class="col-md-3 cartaf">
+        <h2>Horarios de atención administrativos</h2>
         
         <p>Lunes a Viernes</p>
         <p>08:00am a 06:00pm</p>
@@ -184,14 +200,16 @@
         <p>09:00am a 02:00pm</p>     
       </div>
 
-      <div class="col-3 cartaf">
+      <div class="col-md-3 cartaf">
         <h2>Redes Sociales</h2>
         <br>
         <a href="www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-3x" style="color: #cd1237; "></i></a><br>
         
         <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-3x" style="color: #0f4fd0;"></i></a><br>
 
-        <a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-3x" style="color: #094561;"></i></a>      
+        <a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-3x" style="color: #094561;"></i></a><br>
+        
+        <a href="api.whatsapp.com/send?phone=5493542661516" target="_blank"><i class="fa-brands fa-whatsapp fa-3x" style="color: #12c333;"></i></a>     
 
       </div>
     </div>
@@ -199,5 +217,8 @@
 
   </div>
 </section>
+
+
+<script src="./script.js"></script>
 </body>
 </html>
