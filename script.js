@@ -8,7 +8,7 @@ function validacion()
         return false;
     }
 
-    document.getElementById('mensaje').innerHTML = ""; // Clear the message if the validation passes
+    document.getElementById('mensaje').innerHTML = ""; 
     return true;
               
 }
